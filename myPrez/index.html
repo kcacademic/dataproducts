@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Mileage Predictor Application</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Car Mileage Predictor Application">
+  <meta name="author" content="Kumar Chandrakant">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Car Mileage Predictor Application</h1>
+    <h2>Explaining the need and benefits of MyApp.</h2>
+    <p>Kumar Chandrakant<br/>Data Enthusiast</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Executive Summary</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>There is a huge section of car buyers who value the economy a car can provide in terms of the mileage or miles it can run per unit fuel (typically gallon).</p>
+
+<p>While most of the car manufacturers do provide mileage data which can be expected from their car, it is always a good choice to validate it independently.</p>
+
+<p>Sadly it is not easy to perform that validation and if you feel the need to fill that gap, my advise would be keep looking into next few slides!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Details of the Application</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The &quot;Car Mileage Predictor Application&quot; is a step to bridge that gap. It provides easy to use application with least of inputs to predict a mileage car can provide.</p>
+
+<p>The application requires two inputs about the car you are interested in and it can within seconds predict the possible mileage it can offer you. The inputs are quite simple:</p>
+
+<ul>
+<li>Numbver of Cylinders</li>
+<li>Displacement of Engine (in Cubic Inches)</li>
+</ul>
+
+<p>You can easily get these details from the user manual of fact sheet of the car model avialble from the manufacturer.</p>
+
+<p>The application uses data available for a number of cars (&quot;mtcars&quot; data set in R) to create a regression model for predicting the mileage based on the above inputs. This model is then used to predict the mileage for the car with provided inputs.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Let&#39;s See This Working!</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Let&#39;s see how does this work in practice. Suppose Bob is seriously considering a hatchback Prious X10 which is quite cool as par him. But Bob intends to use it heavily and hence quite appehensive about its mileage. The manufacturer claims 26 miles per gallon but Bob is not very confident and would really love to validate this. Let&#39;s see if we can help him.</p>
+
+<p>We ask Bob to find out the number of cylinders and engine displacement (in cubic inches) of Prious X10. Bob finds it from the fact sheet of the car. He provides the data below:</p>
+
+<ul>
+<li>Number of Cylinders: 4</li>
+<li>Displacement of Engine: 120 Cubic Inches</li>
+</ul>
+
+<p>We use the application to help Bob and here is what we find:</p>
+
+<p>Predicted Mileage: 25.8418515</p>
+
+<p>So the manufacturer is indeed right in their claim, wish you a great ride Bob!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>How to Use the Application</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Now that we have got you excited about the usage of application let&#39;s see how can you actually use it.</p>
+
+<p>The application is currently hosted and available for use at the following web location, all you need is an internet connection to use it.</p>
+
+<p><a href="https://kcacademic.shinyapps.io/myApp/">https://kcacademic.shinyapps.io/myApp/</a></p>
+
+<p>All you need to do is provide your input and hit the submit button to get the predicted mileage. What&#39;s more, the application has a contextual guide on the same web page to help you in case you find this intimidating!</p>
+
+<p>Due to the efforts of our freinds at R and RStudio this application has been made available for use absolutely free! Enjoy!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Executive Summary'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Details of the Application'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Let&#39;s See This Working!'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='How to Use the Application'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='NA'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
